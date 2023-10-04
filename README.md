@@ -1,4 +1,4 @@
-Jean Mady ECM1417
+Jean Mady 
 Azure VM link: ecm1417@ml-lab-4d78f073-aa49-4f0e-bce2-31e5254052c7.ukwest.cloudapp.azure.com:65428/GameWebsite/miniGameWebsite
 
 Features-------------
