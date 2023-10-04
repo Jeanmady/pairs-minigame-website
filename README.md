@@ -12,7 +12,6 @@ registration page:
 - Neat tab bar used to toggle through face skin and eyes
 
 Pairs game page:
-- Medium game done
 - 3D flipping anuimation when cards turn over
 - Emojis generated random everytime from provided img assets
 - 10 cards
