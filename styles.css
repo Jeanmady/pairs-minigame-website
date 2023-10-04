@@ -1,0 +1,479 @@
+/*Creating my CSS variables*/
+:root {
+  --cardWidth: 157px;
+  --cardHeight: 220px;
+  --numCards: 10;
+  --cardsHorizSpace: 100px;
+}
+
+body {
+    margin: 0;
+    font: Verdana;
+}
+
+.homeButton {
+  border-radius: 16px;
+}
+
+/* Styling for the navigatio bar that appears on every page */
+.topnav {
+    overflow: hidden;
+    background-color: #0047AB;
+    position: relative;
+}
+
+/* Styling for the navigation bar that appears on every page */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Creates a split to divide navigation bar */
+.topnav a.split {
+    float: right;
+}
+
+/* Sets the background image for the pages */
+body {
+    background-image: url('background-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+main {
+    color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.username-login {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    margin: 20px;
+    height: 500px;
+    width: 800px;
+    padding: 15px;
+    background-color: #89CFF0;
+    border-radius: 16px;
+
+}
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    height: 450px;
+    width: 300px;
+    padding: 16px;
+    background-color: #89CFF0;
+}
+/*Making labels text white*/
+.container label {
+  color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: gainsboro;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    position: absolute;
+    background-color: #0047AB;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    left: 0;
+    bottom: 0;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* */
+.lggedinHome a:link, a:visited {
+    background-color: #0047AB;
+    color: white;
+    padding: 60px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.lggedinHome a:hover, a:active {
+    background-color: #89CFF0;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #0047AB;
+    position: absolute;
+    top: 18%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    padding: 6px 12px; 
+    position: absolute;
+    top: 23%;
+    left: 39%;
+    margin: 20px;
+    height: 345px;
+    width: 445px;
+    background-color: #89CFF0;
+  }
+
+  .tablinks {
+    color: white;
+  }
+
+  .eyeimages {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mouthimages {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skinimages {
+    width: 100px;
+    height: 100px;
+  }
+
+  .errorMess p {
+ color: #ff5050;
+ margin: 0;
+ top: -10px;
+ padding: 0;
+ line-height: 15px;
+
+  }
+
+
+  .emojioutput {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+    padding: 15px;
+    background-color: #89CFF0;
+  }
+
+  .emoji-image {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    height: 100px;
+    width: 100px;
+  }
+  /*Styling the output where it shows users current emoji*/
+  .youremoji h2 {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: -5%;
+  }
+
+
+  .emoji {
+    position: absolute;
+    top: 18%;
+    left: 84%;
+    height: 30px;
+    width: 30px;
+  }
+
+  .gameBackground {
+    background-color: #888888;
+		box-shadow: 0px 0px 5px  #4C4E52;
+		margin: 0 auto;
+		width: 1000px;
+		height: 100vh;
+		padding: 20px;
+  }
+
+  .cardContainer {
+    transform: translateX(30px) translateY(200px);
+    height: 500px;
+    width: calc(var(--cardWidth) * (var(--numCards)/2) + var(--cardsHorizSpace));
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 157px;
+    grid-template-rows: 220px;
+    grid-template-areas: "a b c d e"
+                         "f g h i j";
+    perspective: 1000px; /*creates the 3d affect when clicked on*/
+  }
+
+  .cardPos1 {
+    grid-area: a;
+  }
+
+  .cardPos2 {
+    grid-area: b;
+  }
+
+  .cardPos3 {
+    grid-area: c;
+  }
+
+  .cardPos4 {
+    grid-area: d;
+  }
+
+  .cardPos5 {
+    grid-area: e;
+  }
+
+  .cardPos6 {
+    grid-area: f;
+  }
+
+  .cardPos7 {
+    grid-area: g;
+  }
+
+  .cardPos8 {
+    grid-area: h;
+  }
+
+  .cardPos9 {
+    grid-area: i;
+  }
+
+  .cardPos10 {
+    grid-area: j;
+  }
+  
+  .card {
+    background-color: #888888;
+    position: absolute;
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+  }
+
+  /* This container is needed to position the front and back side */
+  .cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container 
+  .cardInner.flipped {
+    transform: rotateY(180deg);
+  }
+  */
+  /* Position the front and back side */
+  .cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    border-radius: 16px;
+
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .cardFront {
+    background-color: #89CFF0;
+    color: white;
+  }
+  
+  /* Style the back side */
+  .cardBack {
+    background-color: white;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .pairs-card {
+    position: absolute;
+    top: 18%;
+    left: 7px;
+    height: 140px;
+    width: 140px;
+
+  }
+
+  .card.flipped .cardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .matched {
+    background-color: green;
+    pointer-events: none; /* disable clicking on matched cards */
+  }
+
+  .timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #89CFF0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  
+  
+}
+
+.score {
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  background-color: #89CFF0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameOver {
+  background-color: #89CFF0;
+  width: 800px;
+  height: 300px;
+  border-radius: 10px;
+  text-align:center;
+  color: #fff;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.gameOverButton {
+  position: absolute;
+  background-color: #0047AB;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  width: 300px;
+}
+
+#playAgain {
+  left: 10px;
+  bottom: 10px;
+}
+
+#submitScore {
+  right: 10px;
+  bottom: 10px;
+}
+
+table {
+  font: Verdana;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  top: 30%;
+  border: 1px solid black;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+
+th {
+  background-color: #0047AB;
+  color: white;
+}
+
+tr {
+  background-color: #89CFF0;
+}
+
+.leaderboard h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+.leaderboard-container {
+  margin: 50px auto;
+  max-width: 800px;
+}
